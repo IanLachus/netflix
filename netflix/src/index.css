@@ -1,0 +1,30 @@
+@tailwind base; /* Incluye estilos base de Tailwind CSS */
+@tailwind components; /* Incluye componentes de Tailwind CSS */
+@tailwind utilities; /* Incluye utilidades de Tailwind CSS */
+
+body {
+  margin: 0; /* Establece el margen del cuerpo del documento en 0 */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; /* Define la familia de fuentes para el cuerpo del documento */
+  -webkit-font-smoothing: antialiased; /* Suaviza los bordes de los textos en navegadores WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Suaviza los bordes de los textos en macOS */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; /* Define la familia de fuentes para los elementos de código */
+}
+
+@layer utilities {
+  /* Estilos para ocultar la barra de desplazamiento en ciertos elementos */
+  /* Oculta la barra de desplazamiento en Chrome, Safari y Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+  /* Oculta la barra de desplazamiento en IE, Edge y Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none; /* Oculta la barra de desplazamiento en IE y Edge */
+      scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+  }
+}
